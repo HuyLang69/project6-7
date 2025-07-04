@@ -1,0 +1,145 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Breads | Sweet Crumbs Bakery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff8f0;
+      padding: 40px;
+      margin: 0;
+      color: #4e342e;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .product-grid {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .product-card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      width: 250px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px 10px 0 0;
+    }
+
+    .product-card:hover {
+      transform: scale(1.05);
+      transition: transform 0.2s;
+    }
+
+    .discount-label {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: red;
+      color: white;
+      font-size: 12px;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+
+    .top-sale {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      background: gold;
+      color: #000;
+      font-size: 12px;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+
+    .price-tag {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: red;
+      color: white;
+      font-weight: bold;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    .product-name {
+      margin: 10px 0 20px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Our Breads</h1>
+
+  <div class="product-grid">
+
+    <div class="product-card">
+      <span class="discount-label">Discount</span>
+      <span class="price-tag">3.00 $</span>
+      <img src="https://www.allrecipes.com/thmb/GPqr9kEn84Kj00QL56aObbv1ci0=/0x512/filters:no_upscale():max_bytes(150000):strip_icc()/260540-Chef-Johns-Sourdough-Bread-DDMFS-004-4x3-6791a75a5d804ec28424d04756054c5b.jpg" alt="Sourdough">
+      <p class="product-name">Sourdough</p>
+    </div>
+
+    <div class="product-card">
+      <span class="discount-label">Discount</span>
+      <span class="price-tag">2.50 $</span>
+      <span class="top-sale">Top Sale</span>
+      <img src="https://images.squarespace-cdn.com/content/v1/5216e267e4b0cb074c79fdb3/1490154175866-Z95ZGN44Y2OR9Y4XOU4M/image-asset.jpeg" alt="Baguette">
+      <p class="product-name">Baguette</p>
+    </div>
+
+    <div class="product-card">
+      <span class="discount-label">Discount</span>
+      <span class="price-tag">2.80 $</span>
+      <span class="top-sale">Top Sale</span>
+      <img src="https://kikifoodies.com/wp-content/uploads/2025/02/25971753-11CB-4ACA-AC07-10E258901BF4.jpeg" alt="Whole Wheat Loaf">
+      <p class="product-name">Whole Wheat Loaf</p>
+    </div>
+
+    <div class="product-card">
+      <span class="discount-label">Discount</span>
+      <span class="price-tag">3.20 $</span>
+      <img src="https://merryboosters.com/wp-content/uploads/2020/04/Untitled-design-44.png" alt="Ciabatta">
+      <p class="product-name">Ciabatta</p>
+    </div>
+
+    <div class="product-card">
+      <span class="discount-label">Discount</span>
+      <span class="price-tag">3.50 $</span>
+      <img src="https://www.abakingjourney.com/wp-content/uploads/2022/03/Brioche-Loaf-Bread-Feature.jpg" alt="Brioche">
+      <p class="product-name">Brioche</p>
+    </div>
+
+    <div class="product-card">
+      <span class="discount-label">Discount</span>
+      <span class="price-tag">3.00 $</span>
+      <img src="https://bakefromscratch.com/wp-content/uploads/2022/11/Essential247JBweb.jpg" alt="Rye Bread">
+      <p class="product-name">Rye Bread</p>
+    </div>
+
+  </div>
+
+</body>
+</html>

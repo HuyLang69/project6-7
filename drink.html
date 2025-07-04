@@ -1,0 +1,146 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Breads | Sweet Crumbs Bakery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff8f0;
+      padding: 40px;
+      margin: 0;
+      color: #4e342e;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .product-grid {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .product-card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      width: 250px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px 10px 0 0;
+    }
+
+    .product-card:hover {
+      transform: scale(1.05);
+      transition: transform 0.2s;
+    }
+
+    .discount-label {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: red;
+      color: white;
+      font-size: 12px;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+
+    .top-sale {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      background: gold;
+      color: #000;
+      font-size: 12px;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+
+    .price-tag {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: red;
+      color: white;
+      font-weight: bold;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    .product-name {
+      margin: 10px 0 20px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Our Drinks</h1>
+
+  <div class="product-grid">
+
+    <div class="product-card">
+      <span class="discount-label">Discount</span>
+      <span class="price-tag">2.00 $</span>
+      <span class="top-sale">Top Sale</span>
+      <img src="https://staresso.com/cdn/shop/articles/What_is_a_latte.jpg?v=1716606481" alt="Latte">
+      <p class="product-name">Latte</p>
+    </div>
+
+    <div class="product-card">
+      <span class="discount-label">Discount</span>
+      <span class="price-tag">3.50 $</span>
+      <span class="top-sale">Top Sale</span>
+      <img src="https://bakerbynature.com/wp-content/uploads/2024/01/Hot-Chocolate-3.jpg" alt="Hot Chocolate">
+      <p class="product-name">Hot Chocolate</p>
+    </div>
+
+    <div class="product-card">
+      <span class="discount-label">Discount</span>
+      <span class="price-tag">3.00 $</span>
+      <span class="top-sale">Top Sale</span>
+      <img src="https://www.livingnorth.com/images/media/articles/food-and-drink/eat-and-drink/coffee.png?fm=pjpg&w=1000&q=95" alt="Cappuccino">
+      <p class="product-name">Cappuccino</p>
+    </div>
+
+    <div class="product-card">
+      <span class="discount-label">Discount</span>
+      <span class="price-tag">1.50 $</span>
+      <img src="https://thebusybaker.ca/wp-content/uploads/2020/04/healthy-homemade-iced-tea-fb-ig-1-scaled.jpg" alt="Iced Tea">
+      <p class="product-name">Iced Tea</p>
+    </div>
+
+    <div class="product-card">
+      <span class="discount-label">Discount</span>
+      <span class="price-tag">3.00 $</span>
+      <img src="https://healthyfoodiegirl.com/wp-content/uploads/2024/01/Chai-Latte.jpg" alt="Chai Latte">
+      <p class="product-name">Chai Latte</p>
+    </div>
+
+    <div class="product-card">
+      <span class="discount-label">Discount</span>
+      <span class="price-tag">3.50 $</span>
+      <img src="https://www.evolvingtable.com/wp-content/uploads/2022/12/How-to-Make-Smoothie-2.jpg" alt="Fruit Smoothie">
+      <p class="product-name">Fruit Smoothie</p>
+    </div>
+
+  </div>
+
+</body>
+</html>

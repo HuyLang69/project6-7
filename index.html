@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Mr.HuyBakery" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-image: url('https://www.napoleonsbakery.com/wp-content/uploads/2023/07/Napoleons-Bakery-Donuts-Pastries-scaled.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: rgb(207, 192, 192);
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+nav a {
+  display: inline-block;
+  padding: 10px 15px;
+  margin: 0 5px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #49504b;
+  border-radius: 10px;
+}
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  background-color: #6e5f33b2;
+}
+.project-card {
+  background-image: url('https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fill,g_center,w_730,h_913/k%2FDesign%2F2023-09%2Ftypes-of-bread%2FTypes-Of-Bread_Lead-2');
+  background-size: cover;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #000000;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  transition: transform 0.2s;
+}
+.project-card a{
+  text-decoration: none;
+  color: #000000;
+}
+.project-card:hover {
+  transform: scale(1.02);
+}
+.card {
+  background-image: url('https://www.onlyfoods.net/wp-content/uploads/2017/01/Types-of-Drinks-and-Beverages.jpg');
+  background-size: cover;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #000000;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+.card a{
+  text-decoration: none;
+  color: #000000;
+}
+.cake {
+  background-image: url('https://englishan.com/wp-content/smush-webp/2023/09/Types-of-cakes.png.webp');
+  background-size: cover;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #000000;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  transition: transform 0.2s;
+}
+.cake:hover{
+  transform: scale(1.02);
+}
+.cake a{
+  text-decoration: none;
+  color: #050505;
+}
+@media (max-width: 992px) {
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .projects {
+    grid-template-columns: 1fr;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav a {
+    margin: 5px 0;
+  }
+}
+ footer {
+      background-color: #1f1e1e;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+    }
+</style>
+<body>
+    <header>
+        <h1>Mr.HuyBakery</h1>
+        <nav>
+          <a href="home.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="product.html">product</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </header>
+      <main>
+        <section class="projects">
+        <div class="project-card">
+          <a href="breads.html">
+          <h3>Type of Breads</h3>
+          <p>These are some of the bread that are avalable at our bakery at the moment.</p>
+          </a>
+          
+        </div>
+        <div class="card">
+          <a href="drink.html">
+          <h3>Drinks</h3>
+          <p>Some of the popular drinks to go with the bread.</p></a>
+          
+        </div>
+        <div class="cake">
+          <a href="cake.html">
+            <h3>Cakes</h3>
+          <p>Our cake is the best cake you can find in your life.</p>
+          </a>
+          
+        </div>
+      </section>
+      </main>
+      
+       <footer>
+    &copy; 2024 My Portfolio
+  </footer>
+</body>
+</html>
